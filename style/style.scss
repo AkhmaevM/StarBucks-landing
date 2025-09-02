@@ -10,12 +10,22 @@
 // }
 @import "variable";
 @import "header";
+@import "stat";
+
+
+
 //base
 
 body {
+  overflow-x: hidden;
   background: #121517;
+  background-image: url(/img/main-bg.png);
+  background-size: 1920px;
+  background-repeat: no-repeat;
+
 }
 
 .colored {
   color: #35c66b;
 }
+

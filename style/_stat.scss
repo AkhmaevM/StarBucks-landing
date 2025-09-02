@@ -1,0 +1,41 @@
+.stat {
+  margin-top: 100px;
+  margin-left: 92px;
+  margin-right: 126px;
+
+  display: flex;
+  flex-direction: row;
+  column-gap: 289px;
+  align-items: center;
+
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 63px;
+    align-items: center;
+
+    font-family: $main-family;
+
+    &-title {
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 109%;
+      letter-spacing: -0.03em;
+      color: #fff;
+
+      max-width: 411px;
+     
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 163%;
+      letter-spacing: -0.02em;
+      color: #d9d9d9;
+      max-width: 457px;
+    }
+  }
+}

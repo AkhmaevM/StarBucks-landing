@@ -49,6 +49,15 @@
   margin-top: 80px;
 }
 
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 155px;
+       column-gap: 155px;
+  justify-content: space-around;
+}
+
 .header__banner {
   display: flex;
   flex-direction: column;
@@ -133,53 +142,52 @@
 }
 
 .header__bottom {
-  background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
-  border-radius: 46px;
-  width: 1029px;
+  width: 1115px;
+  margin-top: 23px;
+  margin-left: 161px;
+  margin-right: 236px;
 }
 
-.adv {
+.stat {
+  margin-top: 100px;
+  margin-left: 92px;
+  margin-right: 126px;
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 128px;
-       column-gap: 128px;
+  -moz-column-gap: 289px;
+       column-gap: 289px;
   align-items: center;
-  padding: 50px 78px 36px;
 }
-.adv__item {
+.stat__wrapper {
   display: flex;
   flex-direction: column;
+  row-gap: 63px;
   align-items: center;
-  -moz-column-gap: 138px;
-       column-gap: 138px;
-}
-.adv__item-wrapper {
-  background-image: url("../img/Elipse 1.png");
-  background-repeat: no-repeat;
-}
-.adv__item-title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 163%;
-  letter-spacing: -0.02em;
-  color: #121517;
-  padding-bottom: 4px;
 }
-.adv__item-text {
-  font-family: "Montserrat", sans-serif;
+.stat__wrapper-title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  max-width: 411px;
+}
+.stat__wrapper-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 163%;
   letter-spacing: -0.02em;
-  text-align: center;
-  color: rgba(18, 21, 23, 0.9);
-  width: 179px;
-  height: 66px;
+  color: #d9d9d9;
+  max-width: 457px;
 }
 
 body {
+  overflow-x: hidden;
   background: #121517;
+  background-image: url(/img/main-bg.png);
+  background-size: 1920px;
+  background-repeat: no-repeat;
 }
 
 .colored {

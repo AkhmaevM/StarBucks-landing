@@ -48,6 +48,14 @@
   margin-top: 80px;
 }
 
+.header__wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 155px;
+  justify-content: space-around;
+}
+
 .header__banner {
   display: flex;
   flex-direction: column;
@@ -137,74 +145,12 @@
 }
 
 .header__bottom {
-  background: linear-gradient(
-    230deg,
-    #fff 3.94%,
-    #e5e5e5 64.08%,
-    #fbfbfb 88.62%
-  );
-  border-radius: 46px;
-  width: 1029px;
-//   height: 372px;
-  
+  width: 1115px;
+  // height: 460px;
+
+  margin-top: 23px;
+  margin-left: 161px;
+  margin-right: 236px;
+
 }
 
-.adv {
-  display: flex;
-  flex-direction: row;
-  column-gap: 128px;
-  align-items: center;
-  padding: 50px 78px 36px;
-  
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 138px;
-
-
-    &-wrapper{
-        background-image: url('../img/Elipse 1.png');
-        background-repeat: no-repeat;
-        
-    }
-
-    &-title {
-      font-family: $main-family;
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 163%;
-      letter-spacing: -0.02em;
-      color: #121517;
-      padding-bottom: 4px;
-    }
-
-    &-text {
-      font-family: $main-family;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 163%;
-      letter-spacing: -0.02em;
-      text-align: center;
-      color: rgba(18, 21, 23, 0.9);
-      width: 179px;
-      height: 66px;
-    }
-  }
-
-//   &__item:first-child > &__item-img {
-//     width: 146px;
-//     height: 183px;
-//   }
-
-//   &__item:nth-child(2) > &__item-img {
-//     width: 208px;
-//     height: 201px;
-//     transform: rotate(-3deg);
-//   }
-
-//   &__item:last-child > &__item-img {
-//     width: 211px;
-//     height: 153px;
-//   }
-}
