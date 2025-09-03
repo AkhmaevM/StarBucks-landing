@@ -231,26 +231,37 @@
   cursor: pointer;
 }
 .products__cards {
-  width: 277px;
-  height: 554px;
-  display: flex;
-  flex-direction: row;
-  -moz-column-gap: 54px;
-       column-gap: 54px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 20ch;
+  -moz-column-gap: 254px;
+       column-gap: 254px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  anchor-name: --cards;
 }
-.products__cards-img--wrapper {
-  margin-top: 11px;
-  background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
-  width: 186px;
-  height: 186px;
-  border-radius: 100%;
-  box-shadow: 0 5px 52px 0 rgba(0, 0, 0, 0.39);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.products__cards::scroll-button(*) {
+  position: fixed;
+  position-anchor: --cards;
+}
+.products__cards::scroll-button(right) {
+  position-area: inline-end center;
+  content: url("../img/svg/Arrow-right.svg");
+  background-color: #121517;
+  border: none;
+  margin-left: 100px;
+}
+.products__cards::scroll-button(left) {
+  position-area: inline-start center;
+  content: url("../img/svg/Arrow-left.svg");
+  background-color: #121517;
+  border: none;
+  margin-right: 25px;
 }
 .products__cards-item {
+  scroll-snap-align: center;
   background-image: url("../img/svg/white-bg.svg");
   background-position: center;
   background-size: cover;
@@ -272,6 +283,18 @@
   background-size: auto;
   border: 1px solid #35c66b;
   background-position: center;
+}
+.products__cards-img--wrapper {
+  margin-top: 11px;
+  background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+  width: 186px;
+  height: 186px;
+  border-radius: 100%;
+  box-shadow: 0 5px 52px 0 rgba(0, 0, 0, 0.39);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .products__cards-wrapper {
   display: flex;
@@ -328,6 +351,10 @@
   line-height: 146%;
   letter-spacing: -0.02em;
   cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
