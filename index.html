@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <section class="header__top">
+            <section class="header__top" id="footer__up">
                 <p class="header__name">StarBucks</p>
 
                 <nav class="header__nav">
@@ -195,7 +195,6 @@
                             </div>
                         </div>
 
-
                         <div class="products__cards-item">
                             <div class="products__cards-img--wrapper">
                                 <img
@@ -241,7 +240,6 @@
                                     Product</button>
                             </div>
                         </div>
-
 
                         <div class="products__cards-item">
                             <div class="products__cards-img--wrapper">
@@ -290,17 +288,14 @@
                         </div>
                     </div>
 
-                    
-                    
-                    
                 </div>
 
             </div>
 
             <div class="events">
                 <div class="events__top">
-                    <h2 class="events__top-tile">
-                        Our New Events
+                    <h2 class="events__top-title">
+                        Our New <span class="colored">Events</span>
                     </h2>
 
                     <p class="events__top-text">
@@ -309,31 +304,42 @@
                         ready to destroy the market
                     </p>
 
-                    <div class="events__cards">
-                        <div class="events__cards-item">
-                            <div class="events__cards-title"></div>
-                            <div class="events__cards-text"></div>
-                        </div>
-                        <div class="events__cards-item">
-                            <div class="events__cards-title"></div>
-                            <div class="events__cards-text"></div>
-                        </div>
-                        <div class="events__cards-item">
-                            <div class="events__cards-title"></div>
-                            <div class="events__cards-text"></div>
-                        </div>
-                        <div class="events__cards-item">
-                            <div class="events__cards-title"></div>
-                            <div class="events__cards-text"></div>
-                        </div>
+                </div>
+
+                <div class="events__cards">
+                    <div class="events__cards-item">
+                        <div class="events__cards-title">TWO COFFEE <br> FOR 1
+                            PRICE</div>
+                        <button class="events__cards-btn">More</button>
+                    </div>
+                    <div class="events__cards-item">
+                        <div class="events__cards-title">KITCHEN <br> TOUR</div>
+                        <button class="events__cards-btn">More</button>
+                    </div>
+                    <div class="events__cards-item">
+                        <div class="events__cards-title">FREE COFFEE <br> FOR 3
+                            COFFEE</div>
+                        <button class="events__cards-btn">More</button>
+                    </div>
+                    <div class="events__cards-item">
+                        <div class="events__cards-title">OUR <br>INSTAGRAM</div>
+                        <button class="events__cards-btn">More</button>
+                    </div>
+
+                    <div class="events__cards-item">
+                        <div class="events__cards-title">WHERE ARE YOU <br>
+                            CHOOSE
+                            US?</div>
+                        <button class="events__cards-btn">More</button>
                     </div>
                 </div>
             </div>
 
             <div class="contacts">
+
                 <div class="contacts__info">
                     <h2 class="contacts__title">
-                        Our <span>Contacts</span>
+                        Our <span class="colored">Contacts</span>
                     </h2>
 
                     <p class="contacts__text">
@@ -344,64 +350,67 @@
                     <div class="contacts__links">
                         <a href="#" class="contacts__links-item">
                             <img src="/img/svg/instagram.svg" alt="instagram">
-                            <@supercoffee/a>
-                            <a href="tel:+7-999-999-99-99"
-                                class="contacts__links-item"><img
-                                    src="./img/svg/phone.svg" alt="phone"></a>
-                        </div>
+                            @supercoffee </a>
+                        <a href="tel:+7-999-999-99-99"
+                            class="contacts__links-item"><img
+                                src="./img/svg/phone.svg"
+                                alt="phone">+7-999-999-99-99</a>
                     </div>
-                    <img src="./img/Contacts.png" alt="Contacts"
-                        class="contacts__img">
-                </div>
-            </main>
-
-            <footer>
-                <div class="footer__left">
-                    <h2 class="footer__title">StarBucks</h2>
-
-                    <a href="tel:+7-999-999-99-99"></a>
                 </div>
 
-                <div class="footer__center">
-                    <nav class="footer__nav">
-                        <ul class="footer__list">
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
+                <img src="./img/Contacts.png" alt="Contacts"
+                    class="contacts__img">
+            </div>
+        </main>
 
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                            <li class="footer__list-item"></li>
-                        </ul>
-                    </nav>
-                </div>
+        <footer class="footer">
+            <div class="footer__left">
+                <h2 class="footer__title">StarBucks</h2>
 
-                <div class="footer__right">
-                    <button class="footer__up">
-                        <img src="./img/svg/Arrow-up.svg" alt="Arrow-up"
-                            class="footer__link">
-                    </button>
+                <a href="tel:+7-999-999-99-99"
+                    class="footer__tel">+7-999-999-99-99</a>
+            </div>
 
-                    <img src="./img/svg/instagram.svg" alt="instagram"
+            <div class="footer__center">
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Main</li>
+                        <li class="footer__list-item">Buy</li>
+                        <li class="footer__list-item">More</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">We make</li>
+                        <li class="footer__list-item">Process</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Products</li>
+                        <li class="footer__list-item">Cappuccino</li>
+                        <li class="footer__list-item">Fast</li>
+                        <li class="footer__list-item">Fast</li>
+
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Events</li>
+                        <li class="footer__list-item">Drinks</li>
+                        <li class="footer__list-item">Eat</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Contacts</li>
+                        <li class="footer__list-item">Instagram</li>
+                        <li class="footer__list-item">Number</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__right">
+                <a class="footer__up" href="#footer__up">
+                    <img src="./img/svg/Arrow-up.svg" alt="Arrow-up"
+                        class="footer__link">
+                </a>
+
+                <a href="#"><img src="./img/svg/instagram.svg" alt="instagram"
                         class="footer__social">
-                </div>
-            </footer>
-        </body>
-    </html>
+                </a></div>
+        </footer>
+    </body>
+</html>

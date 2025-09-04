@@ -144,7 +144,7 @@
 .header__bottom {
   width: 1115px;
   margin-top: 23px;
-  margin-left: 161px;
+  margin-left: 236px;
   margin-right: 236px;
 }
 
@@ -350,6 +350,214 @@
   font-size: 17px;
   line-height: 146%;
   letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.events {
+  margin: 100px 130px 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 54px;
+  align-items: end;
+}
+.events__top {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 72px;
+       column-gap: 72px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.events__top-title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109%;
+  letter-spacing: -0.03em;
+  width: 366px;
+  order: 2;
+}
+.events__top-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+  width: 457px;
+  order: 1;
+}
+.events__cards {
+  width: 1253px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.events__cards-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+  align-items: start;
+  width: 401px;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.events__cards-item:hover {
+  box-shadow: 1px 1px 1px 1px #35c66b;
+}
+.events__cards-item:first-child {
+  background-image: url(../img/events/twocoffe.png);
+  width: 614px;
+}
+.events__cards-item:nth-child(2) {
+  background-image: url(../img/events/kitchentour.png);
+  width: 614px;
+}
+.events__cards-item:nth-child(3) {
+  background-image: url(../img/events/freecoffe.png);
+}
+.events__cards-item:nth-child(4) {
+  background-image: url(../img/events/instagram.png);
+}
+.events__cards-item:nth-child(5) {
+  background-image: url(../img/events/chooseus.png);
+}
+.events__cards-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 109%;
+  padding-top: 44px;
+  padding-left: 27px;
+}
+.events__cards-btn {
+  width: 167px;
+  height: 74px;
+  border-radius: 83px;
+  margin-left: 27px;
+  margin-bottom: 22px;
+  color: #fff;
+  background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 146%;
+  letter-spacing: -0.03em;
+}
+.events__cards-btn:hover {
+  cursor: pointer;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 375px;
+       column-gap: 375px;
+  margin: 80px 130px 107px;
+  justify-content: space-around;
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 54px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.contacts__title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109%;
+  letter-spacing: -0.03em;
+  width: 365px;
+}
+.contacts__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+  width: 387px;
+  background-image: url(../img/svg/constacts-bg.svg);
+  border-radius: 100%;
+  background-size: 328px 262px;
+}
+.contacts__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  align-items: flex-start;
+}
+.contacts__links-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 132%;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  align-items: center;
+}
+
+.footer {
+  background: #0b0c0d;
+  display: flex;
+  flex-direction: row;
+  padding: 38px 127px 84px 121px;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 174px;
+  padding-right: 67px;
+}
+.footer__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 37px;
+  line-height: 109%;
+  letter-spacing: -0.03em;
+  color: #35c66b;
+}
+.footer__tel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #35c66b;
+  text-decoration: none;
+}
+.footer__center {
+  padding-right: 108px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 82px;
+       column-gap: 82px;
+}
+.footer__list {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: rgba(187, 179, 179, 0.43);
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  cursor: pointer;
+}
+.footer__list-item:hover {
+  color: #bbb3b3;
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 128px;
+  align-items: flex-end;
+}
+.footer__up {
+  background: #0b0c0d;
+  border: none;
   cursor: pointer;
 }
 

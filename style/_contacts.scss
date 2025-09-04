@@ -1,0 +1,56 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  column-gap: 375px;
+  margin: 80px 130px 107px;
+  justify-content: space-around;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 54px;
+
+    font-family: $main-family;
+    color: #fff;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 109%;
+    letter-spacing: -0.03em;
+    width: 365px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
+    width: 387px;
+
+    background-image: url(../img/svg/constacts-bg.svg);
+    border-radius: 100%;
+    background-size: 328px 262px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    align-items: flex-start;
+
+    &-item {
+      font-family: $main-family;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 132%;
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      column-gap: 14px;
+      align-items: center;
+    }
+  }
+}

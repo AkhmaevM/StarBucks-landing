@@ -1,0 +1,113 @@
+.events {
+  margin: 100px 130px 80px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 54px;
+  align-items: end;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    column-gap: 72px;
+    align-items: center;
+
+    font-family: $main-family;
+    color: #fff;
+
+    &-title {
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 109%;
+      letter-spacing: -0.03em;
+      width: 366px;
+
+      order: 2;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 163%;
+      letter-spacing: -0.02em;
+      width: 457px;
+
+      order: 1;
+    }
+  }
+
+  &__cards {
+    width: 1253px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 44px;
+      align-items: start;
+      width: 401px;
+      border-radius: 30px;
+      font-family: $main-family;
+      color: #fff;
+      
+      transition: all 0.2s ease-in-out;
+
+      &:hover{
+        box-shadow: 1px 1px 1px 1px #35c66b;
+      }
+      // backgrounds
+
+      &:first-child {
+        background-image: url(../img/events/twocoffe.png);
+        width: 614px;
+      }
+
+      &:nth-child(2) {
+        background-image: url(../img/events/kitchentour.png);
+        width: 614px;
+      }
+
+      &:nth-child(3) {
+        background-image: url(../img/events/freecoffe.png);
+      }
+
+      &:nth-child(4) {
+        background-image: url(../img/events/instagram.png);
+      }
+
+      &:nth-child(5) {
+        background-image: url(../img/events/chooseus.png);
+      }
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 109%;
+
+      padding-top: 44px;
+      padding-left: 27px;
+    }
+
+    &-btn {
+      width: 167px;
+      height: 74px;
+      border-radius: 83px;
+      margin-left: 27px;
+      margin-bottom: 22px;
+      color: #fff;
+      background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 146%;
+      letter-spacing: -0.03em;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
