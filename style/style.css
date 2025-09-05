@@ -503,6 +503,8 @@
   background: #0b0c0d;
   display: flex;
   flex-direction: row;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
   padding: 38px 127px 84px 121px;
 }
 .footer__left {
